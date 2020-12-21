@@ -9,8 +9,8 @@ const tasks = [
 
 runSequential(
   tasks,
-  data => {
-    console.log(`Ran task ${data.taskIndex}`)
+  ({ taskIndex }) => {
+    console.log(`Ran task ${taskIndex}`)
   },
   () => {
     console.log(`All done :)`)
