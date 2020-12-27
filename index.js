@@ -1,4 +1,4 @@
-const runSequential = require('./runSequential.js')
+const { runSequential } = require('./runSequential.js')
 
 const tasks = [
   // 1. Each async task should accept a callback

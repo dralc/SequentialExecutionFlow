@@ -5,7 +5,7 @@
  * @param {function({ taskIndex: number })} callback A function to run after each function in <collection>
  * @param {function} finalCallback The function to run after the last function in <collection> has run
  */
-module.exports = function runSequential(collection, callback, finalCallback) {
+function runSequential(collection, callback, finalCallback) {
 
   let index = 0;
 
@@ -23,4 +23,13 @@ module.exports = function runSequential(collection, callback, finalCallback) {
   }
 
   runNextTask(index)
+}
+
+function runSequentialWithPromises(collection) {
+  
+}
+
+module.exports = {
+  runSequential,
+  runSequentialWithPromises
 }
