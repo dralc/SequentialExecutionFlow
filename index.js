@@ -13,6 +13,6 @@ runSequential(
     console.log(`Ran task ${taskIndex}`)
   },
   () => {
-    console.log(`All done :)`)
+    console.log(`All done via callbacks :)`)
   }
 )

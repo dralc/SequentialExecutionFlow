@@ -25,11 +25,6 @@ function runSequential(collection, callback, finalCallback) {
   runNextTask(index)
 }
 
-function runSequentialWithPromises(collection) {
-  
-}
-
 module.exports = {
-  runSequential,
-  runSequentialWithPromises
+  runSequential
 }
